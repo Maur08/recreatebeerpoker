@@ -1,22 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import header from '../sections/header.astro';
-import banner from '../sections/banner.astro';
-import slogan from '../sections/slogan.astro';
-import info from '../sections/info.astro';
-import footer from '../sections/footer.astro';
+import Banner from '../sections/Banner.astro';
+import Slogan from '../sections/Slogan.astro';
+import Info from '../sections/Info.astro';
+import footer from '../sections/Footer.astro';
+import Header from '../sections/Header.astro';
 ---
 
 <Layout title="Cerveza Poker c">
-	<header />
-	<main>
-		<banner />
-		<slogan />
-		<info />
-	</main>
+	<Header />
+		<Banner />
+		<Slogan />
+		<Info />
 	<footer />
 </Layout>
 
 <style>
-
+	body{
+		padding: 0;
+		margin: 0;
+		display: block;
+	}
 </style>
